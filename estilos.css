@@ -857,8 +857,12 @@ section:nth-child(odd) .animate.scroll,
 
 @media (max-width: 462px) {
 
+    .home-content h1 {
+        font-size: 5.2rem;
+    }
+
  .home {
-        padding: 7rem 4%;
+        padding: 0 4%;
     }
     .home-content h1 {
         font-size: 5.2rem;
@@ -871,30 +875,12 @@ section:nth-child(odd) .animate.scroll,
 
     .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     gap:2.5rem;
 }
 
-}
-
-    @media (max-width: 879px) {
-    .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 580px) {
-    .portfolio-container {
-        grid-template-columns: 1fr;
-    }
-    html {
-       font-size: 62%;
-    }
-}
-
-
-
-    .contact form .input-box .input-field {
+ .contact form .input-box .input-field {
         width: 100%;
     }
 
@@ -907,6 +893,10 @@ section:nth-child(odd) .animate.scroll,
         text-align: center;
     }
 }
+
+
+
+ 
 
 @media (max-width: 371px) {
     .home {
