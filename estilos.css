@@ -900,8 +900,11 @@ section:nth-child(odd) .animate.scroll,
 
 @media (max-width: 371px) {
     .home {
-        justify-content: center;
+        display: flex;
+        justify-content:center;
     }
+
+
 
     .home-content {
         display: flex;
@@ -911,8 +914,10 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
+
+
 }
 
 
