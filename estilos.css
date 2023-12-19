@@ -742,6 +742,7 @@ section:nth-child(odd) .animate.scroll,
 }
 
 @media (max-width: 991px) {
+   
     .header {
         padding: 2rem 4%;
         width: 100%;
@@ -752,7 +753,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home {
-        padding: 0 4%;
+        padding: 6rem 4%;
     }
 
     .footer {
@@ -831,11 +832,6 @@ section:nth-child(odd) .animate.scroll,
         background: var(--bg-color);
         opacity: .6;
     }
-
-
-
-
-
     
 }
 
@@ -860,15 +856,27 @@ section:nth-child(odd) .animate.scroll,
 }
 
 @media (max-width: 462px) {
+
+ .home {
+        padding: 7rem 4%;
+    }
     .home-content h1 {
         font-size: 5.2rem;
-        
-
+    
     }
 
      .portfolio {
         padding: 10rem 4% 5rem 5%;
     } 
+
+    .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap:2.5rem;
+}
+
+}
 
     @media (max-width: 879px) {
     .portfolio-container {
