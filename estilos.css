@@ -753,7 +753,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home {
-        padding: 6rem 4%;
+        padding: 0 4%;
     }
 
     .footer {
@@ -795,7 +795,7 @@ section:nth-child(odd) .animate.scroll,
         transition-delay: 0s;
     }
 
-    .navbar .active-nav {
+    .navbar.active-nav {
         position: absolute;
         top: 0;
         left: -100%;
@@ -814,7 +814,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .navbar a {
-        display: block;
+       display: block;
         font-size: 2rem;
         margin: 3rem 0;
         transform: translateX(-20rem);
@@ -827,12 +827,18 @@ section:nth-child(odd) .animate.scroll,
         transition-delay: .25s;
     }
 
+
+
+
+
+
     .home-imgHover {
         pointer-events: none;
         background: var(--bg-color);
         opacity: .6;
     }
-    
+
+   
 }
 
 @media (max-width: 520px) {
@@ -914,7 +920,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home-content h1 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
 
