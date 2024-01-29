@@ -768,6 +768,9 @@ section:nth-child(odd) .animate.scroll,
 }
 
 @media (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
     .header {
         background: var(--bg-color);
      
@@ -795,7 +798,7 @@ section:nth-child(odd) .animate.scroll,
         transition-delay: 0s;
     }
 
-    .navbar.active-nav {
+    .navbar .active-nav {
         position: absolute;
         top: 0;
         left: -100%;
