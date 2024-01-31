@@ -830,19 +830,35 @@ section:nth-child(odd) .animate.scroll,
         transition-delay: .25s;
     }
 
-
-
-
-
-
     .home-imgHover {
         pointer-events: none;
         background: var(--bg-color);
         opacity: .6;
     }
 
+    .home {
+        display: flex;
+        align-items: center;
+    }
+
+   .home-content {
+   margin: 7rem 4rem;
+   }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+   .btn-box {
+    
+    margin-left: 25rem;
+   }
+  
    
 }
+
+
+
 
 @media (max-width: 520px) {
     html {
