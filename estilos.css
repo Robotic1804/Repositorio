@@ -769,7 +769,7 @@ section:nth-child(odd) .animate.scroll,
 
 @media (max-width: 768px) {
     html {
-        font-size: 45%;
+        font-size: 40%;
     }
     .header {
         background: var(--bg-color);
@@ -817,7 +817,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .navbar a {
-       display: block;
+        display: block;
         font-size: 2rem;
         margin: 3rem 0;
         transform: translateX(-20rem);
@@ -830,19 +830,22 @@ section:nth-child(odd) .animate.scroll,
         transition-delay: .25s;
     }
 
-
-
-
-
-
     .home-imgHover {
         pointer-events: none;
         background: var(--bg-color);
         opacity: .6;
     }
 
-   
+    .home-content {
+        height: 100vh;
+        padding: 8rem 0;
+    }
+
+
+
 }
+
+
 
 @media (max-width: 520px) {
     html {
@@ -856,6 +859,7 @@ section:nth-child(odd) .animate.scroll,
 
     .home-sci {
         width: 160px;
+      
     }
 
     .home-sci a {
