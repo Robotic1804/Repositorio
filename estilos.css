@@ -16,6 +16,7 @@
     --second-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #00abf0;
+    --header-height: 80px;
 }
 
 html {
@@ -81,6 +82,8 @@ body {
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
+    scroll-margin-top: var(--header-height);
+
 }
 
 .home {
@@ -845,6 +848,8 @@ section:nth-child(odd) .animate.scroll,
 }
 
 @media (max-width: 768px) {
+      :root { --header-height: 64px; }
+
    
     html {
         font-size: 40%;
@@ -1050,13 +1055,6 @@ section:nth-child(odd) .animate.scroll,
         font-size: 5rem;
     }
 }
-
-
-
-
-
-
-
 
 /* KEYFRAMES ANIMATION */
 @keyframes homeBgText {
