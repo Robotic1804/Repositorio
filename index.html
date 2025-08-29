@@ -1,30 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-     <!--Metadatos--->
-    <meta charset="UTF-8"/>
-     <meta name="author" content="Norman Navarro">
-    <meta name="description" content="Portfolio showcasing my expertise in web development, including responsive design, front-end technologies, and a variety of projects. Explore my work and get in touch to discuss your web development needs.">
-    <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, Git, Typescript, Angular">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!---Title----->
-    <title>Norm | Frontend Dev</title>
+<head>
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="images/homepics4.jpg" as="image">
 
-    <link rel="stylesheet" href="estilos.css" />
-    <!-- box icons -->
-     <link rel="icon" href="images/icono.svg" type="marca">
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"/>
-  </head>
-  <body>
-    <!-- header design -->
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="author" content="Norman Navarro" />
+  <meta name="description" content="I’m Norman Navarro, a Frontend Developer specialized in Angular, TypeScript, and responsive design. Explore my portfolio of modern web projects and contact me to collaborate." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#081b29" />
+  <meta name="color-scheme" content="dark" />
+
+  <title>Norman Navarro | Frontend Developer</title>
+
+  <!-- Styles -->
+  <link rel="preload" href="estilos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="estilos.css"></noscript>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.norman-webdesigner.com/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Norman Navarro | Frontend Developer" />
+  <meta property="og:description" content="Web development portfolio with Angular, TypeScript, and Node.js. Responsive design and real-world projects." />
+  <meta property="og:image" content="https://www.norman-webdesigner.com/images/homepics4.jpg" />
+  <meta property="og:url" content="https://www.norman-webdesigner.com" />
+  <meta property="og:type" content="website" />
+<!-- Favicon -->
+   <!-- Favicon -->
+  <!-- Principal (SVG escalable) -->
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+
+  <!-- PNG fallbacks para navegadores que no leen SVG -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+  <!-- iOS/Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
+
+  <!-- X Card -->
+  <meta name="X:card" content="summary_large_image" />
+  <meta name="X:title" content="Norman Navarro | Frontend Developer" />
+  <meta name="X:description" content="Frontend Developer specialized in Angular and TypeScript. Explore my portfolio and projects." />
+  <meta name="X:image" content="https://www.norman-webdesigner.com/images/homepics4.jpg" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Norman Navarro",
+    "jobTitle": "Frontend Developer",
+    "url": "https://www.norman-webdesigner.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mesa",
+      "addressRegion": "Arizona",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://github.com/Robotic1804",
+      "https://www.linkedin.com/in/your-profile",
+      "https://x.com/Norm1804"
+    ],
+    "knowsAbout": [
+      "HTML","CSS","JavaScript","TypeScript","Angular",
+      "Bootstrap","Node.js","MySQL","Responsive Design"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Norman Web Designer",
+      "url": "https://www.norman-webdesigner.com"
+    }
+  }
+  </script>
+</head>
+
+
+<body>
+  <!-- header design -->
     <header class="header">
-      <a href="#" class="logo"
-        >Norman<span class="animate" style="--i: 1;"></span
+      <a href="#" class="logo">Norman<span class="animate" style="--i: 1;"></span
       ></a>
-
       <div class="bx bx-menu" id="menu-icon">
         <span class="animate" style="--i:2;"></span>
       </div>
@@ -35,9 +97,6 @@
         <a href="#portfolio">Portfolio</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-       
-
-
         <span class="active-nav"></span>
         <span class="animate" style="--i: 2;"></span>
       </nav>
@@ -57,7 +116,7 @@
           <span class="animate" style="--i:3;"></span>
         </div>
         <p>
-       Hi there! I’m Norman, a frontend developer based in Mesa, Arizona. I geek out over crafting clean, intuitive interfaces and love diving into complex problems—so much that a breakthrough in my code can wake me up at 3 AM with a coffee in hand. Outside the screen, you’ll find me running at sunset, exploring new technologies over my favorite brew, or sharpening my focus practicing Aikido. Let’s build something great together!
+      Frontend Developer passionate about creating modern, responsive, and engaging web experiences. Specialized in Angular • Node.js • MySQL • PostgreSQL
           <span class="animate" style="--i:4;"></span>
         </p>
 
@@ -69,8 +128,8 @@
           <div class="home-sci">
         <!-- <a href="https://www.facebook.com/" target="_blank"><i class="bx bxl-facebook"></i></a> -->
         <a href="https://github.com/Robotic1804" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://twitter.com/home" target="_blank"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://x.com/Norm1804" target="_blank"><i class="bx bxl-twitter"></i></a>
+        <a href="" target="_blank"><i class="bx bxl-linkedin"></i></a>
         <span class="animate" style="--i:6;"></span>
       </div>
       </div>
@@ -98,8 +157,9 @@
           Frontend Developer!<span class="animate scroll" style="--i:3;"></span>
         </h3>
         <p>
-          Hi there! I’m Norman, a frontend developer based in Mesa, Arizona. I geek out over crafting clean, intuitive interfaces and love diving into complex problems—so much that a breakthrough in my code can wake me up at 3 AM with a coffee in hand. Outside the screen, you’ll find me running at sunset, exploring new technologies over my favorite brew, or sharpening my focus practicing Aikido. Let’s build something great together!
-          <span class="animate scroll" style="--i:4;"></span>
+        Hi, I’m Norman Navarro, a Frontend Developer who loves bringing ideas to life through modern, responsive, and engaging websites.
+        With strong experience in Angular, RxJS, Node.js, and MySQL, I help businesses and individuals create fast, functional, and visually appealing digital products.
+        My goal is to build websites that not only look great but also solve problems and improve the user experience. Whether you need a personal portfolio, an e-commerce store, or a custom web solution, I can help you make it happen. <span class="animate scroll" style="--i:4;"></span>
         </p>
 
         <div class="btn-box btns">
@@ -320,20 +380,22 @@
     </section>
 
     <!-- footer design -->
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; 2023 by Norman Navarro | All Rights Reserved.</p>
+ <footer class="footer">
+  <div class="footer-text">
+    <p>Copyright &copy; <span id="current-year">2025</span> by Norman Navarro | All Rights Reserved.</p>
+    <span class="animate scroll" style="--i: 1"></span>
+  </div>
+  
+  <div class="footer-iconTop">
+    <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    <span class="animate scroll" style="--i: 3"></span>
+  </div>
+</footer>
 
-        <span class="animate scroll" style="--i: 1"></span>
-      </div>
-
-      <div class="footer-iconTop">
-        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
-
-        <span class="animate scroll" style="--i: 3"></span>
-      </div>
-    </footer>
+<script>
+document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 
     <script src="portafolio.js"></script>
-  </body>
+</body>
 </html>
