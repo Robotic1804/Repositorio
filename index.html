@@ -18,8 +18,9 @@
   <title>Norman Navarro | Frontend Developer</title>
 
   <!-- Styles -->
-  <link rel="preload" href="estilos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="estilos.css"></noscript>
+  <link rel="preload" href="estilos.css" as="style">
+<link rel="stylesheet" href="estilos.css">
+
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
 
   <!-- Canonical -->
@@ -395,6 +396,49 @@
 <script>
 document.getElementById('current-year').textContent = new Date().getFullYear();
 </script>
+
+
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<!-- Vanta.js (NET) -->
+<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+
+<script>
+  let vantaEffect = null;
+
+  function initVanta() {
+    if (window.innerWidth <= 768 && !vantaEffect) { 
+      // Si es móvil y aún no hay animación, la activamos
+      vantaEffect = VANTA.NET({
+        el: "#home",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0x081b29, // Fondo oscuro en móviles
+        color: 0x00abf0,
+        points: 12.00,
+        maxDistance: 20.00,
+        spacing: 15.00
+      });
+    } else if (window.innerWidth > 768 && vantaEffect) {
+      // Si regresa a desktop y había animación → destruirla
+      vantaEffect.destroy();
+      vantaEffect = null;
+    }
+  }
+
+  // Ejecuta al cargar
+  initVanta();
+
+  // Vuelve a evaluar si el usuario cambia tamaño (rotación de móvil, etc.)
+  window.addEventListener("resize", initVanta);
+</script>
+
+
 
     <script src="portafolio.js"></script>
 </body>
